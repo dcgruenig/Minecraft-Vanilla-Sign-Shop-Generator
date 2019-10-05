@@ -1,4 +1,4 @@
-var moneyDummy = 'money';
+var moneyDummy = 'Money';
 		var currencySymbol = '$';
 		var moneyDisplay = 'Money $'
 		var distance = 5;
