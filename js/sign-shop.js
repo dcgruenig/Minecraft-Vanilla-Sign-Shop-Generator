@@ -3,6 +3,7 @@ var moneyDummy = 'money';
 		var moneyDisplay = 'Money $'
 		var distance = 5;
 		var itemDummy = 'hasItems';
+		var signType = "minecraft:oak_sign";
 
 		// Generate the JSON for the sell sign
 		function sell(item, itemName, price, quantity) {
@@ -32,7 +33,7 @@ var moneyDummy = 'money';
 					})
 				}
 			};
-			signObject = '/give @p minecraft:sign' + JSON.stringify(signObject);
+			signObject = '/give @p ' + signType + JSON.stringify(signObject);
 			return signObject;
 		}
 
@@ -64,7 +65,7 @@ var moneyDummy = 'money';
 					})
 				}
 			};
-			signObject = '/give @p minecraft:sign' + JSON.stringify(signObject);
+			signObject = '/give @p ' + signType + JSON.stringify(signObject);
 			return signObject;
 		}
 
@@ -88,7 +89,7 @@ var moneyDummy = 'money';
 					})
 				}
 			};
-			signObject = '/give @p minecraft:sign' + JSON.stringify(signObject);
+			signObject = '/give @p ' + signType + JSON.stringify(signObject);
 			return signObject;
 		}
 
@@ -112,7 +113,7 @@ var moneyDummy = 'money';
 					})
 				}
 			};
-			signObject = '/give @p minecraft:sign' + JSON.stringify(signObject);
+			signObject = '/give @p ' + signType + JSON.stringify(signObject);
 			return signObject;
 		}
 
