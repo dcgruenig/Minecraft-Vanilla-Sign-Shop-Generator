@@ -52,6 +52,7 @@
 							<label>Item ID <input id="itemId" type="text" placeholder="Item ID (i.e. minecraft:coal)" value="minecraft:coal"/></label>
 							<label>Item Name <input id="itemName" type="text" placeholder="Item Name" value="Coal" /></label>
 							<label>Sell Price <input id="sellPrice" type="text" placeholder="Sell Price" value="1"/></label>
+							<label>Sign Type<input id="signType" type="text" placeholder="Sign Type" value="minecraft:oak_sign"/></label>
 						</div>
 						<div class="col s12 m6">
 							<label>Buy Price <input id="buyPrice" type="text" placeholder="Buy Price" value="2"/></label>
@@ -93,6 +94,7 @@
 			var quantity = $('#quantity').val();
 			moneyDisplay = 'Money ' + $('#currency').val();
 			currencySymbol = $('#currency').val();
+			signType = $('#signType').val();
 			$('#sell').val(sell(itemId, itemName, sellPrice, quantity));
 			$('#buy').val(buy(itemId, itemName, buyPrice, quantity));
 			$('#setup').val(setup());
