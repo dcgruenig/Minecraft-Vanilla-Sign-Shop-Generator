@@ -86,7 +86,8 @@
 	<script src="js/sign-shop.js"></script>
 	<script>
 		// Initialize everything
-		$('#generate').on('click', function() {
+		$('#generate').on('click', function(e) {
+			e.preventDefault();
 			var itemId = $('#itemId').val();
 			var itemName = $('#itemName').val();
 			var sellPrice = $('#sellPrice').val();
